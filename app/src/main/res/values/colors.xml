@@ -1,0 +1,6 @@
+<!-- File: res/values/colors.xml -->
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background_dark">#3B2B2B</color>
+</resources>

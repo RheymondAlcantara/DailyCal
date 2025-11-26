@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Food"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Food Name"
+            android:background="@drawable/card_bg_rounded"
+            android:padding="12dp"
+            android:textColor="#111827"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/etServing"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:hint="Serving"
+                android:background="@drawable/card_bg_rounded"
+                android:padding="12dp"
+                android:inputType="number"
+                android:textColor="#111827" />
+
+            <Spinner
+                android:id="@+id/spinnerUnit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/card_bg_rounded"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/etCalories"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:hint="Calorie (kcal)"
+                android:background="@drawable/card_bg_rounded"
+                android:padding="12dp"
+                android:inputType="number"
+                android:textColor="#111827" />
+
+            <EditText
+                android:id="@+id/etCarbs"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:hint="Carbs (g)"
+                android:background="@drawable/card_bg_rounded"
+                android:padding="12dp"
+                android:inputType="number"
+                android:textColor="#111827" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/etProtein"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:hint="Protein (g)"
+                android:background="@drawable/card_bg_rounded"
+                android:padding="12dp"
+                android:inputType="number"
+                android:textColor="#111827" />
+
+            <EditText
+                android:id="@+id/etFat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:hint="Fat (g)"
+                android:background="@drawable/card_bg_rounded"
+                android:padding="12dp"
+                android:inputType="number"
+                android:textColor="#111827" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveFood"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_primary_rounded"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

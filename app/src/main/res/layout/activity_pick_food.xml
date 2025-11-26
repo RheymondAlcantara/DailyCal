@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvPickFoodHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick a Saved Food"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:layout_marginBottom="12dp" />
+
+    <!-- List of Foods -->
+    <ListView
+        android:id="@+id/listSavedFoods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:background="#F5F5F5"
+        android:padding="4dp" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/btnCancelPick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="#FFFFFF"
+        android:background="#DC2626"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

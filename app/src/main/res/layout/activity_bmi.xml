@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Unit Toggle Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnMetric"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Metric"
+                android:backgroundTint="#111827"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_primary_rounded" />
+
+            <Button
+                android:id="@+id/btnImperial"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Imperial"
+                android:backgroundTint="#E5E7EB"
+                android:textColor="#111827"
+                android:background="@drawable/btn_secondary_rounded" />
+        </LinearLayout>
+
+        <!-- Input Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#FFFFFF"
+            android:clipToPadding="false"
+            android:background="@drawable/card_bg_rounded">
+
+            <EditText
+                android:id="@+id/etHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter height (cm)"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:textColor="#111827"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter weight (kg)"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/btnCalculateBMI"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Calculate BMI"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_primary_rounded"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnEditBMI"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Edit Info"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_secondary_rounded"
+            android:textColor="#111827"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/tvBMIResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Result"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#374151" />
+    </LinearLayout>
+</ScrollView>
